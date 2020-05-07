@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>压力测试</title>
+    </head>
+    <body>
+<br/>
+<br/>
+    <div align="center"><font size="5"> <strong>MyBench 压力测试</strong></font></div>
+    <br/>
+        <div class="Bench">
+                <form action="7" method="post">
+                        <div align="center">
+                            <p>是否等待服务器响应
+                            <input type="radio" name = "force" value = "Y">是
+                            <input type="radio" name = "force" value = "N" checked = "checked">否
+                            </p>
+                            <p>是否使用缓存
+                            <input type="radio" name = "reload" value = "Y">是
+                            <input type="radio" name = "reload" value = "N" checked = "checked">否
+                            </p>
+                            <p>HTTP 版本
+                            <input type="radio" name = "http" value = "9">http0.9
+                            <input type="radio" name = "http" value = "0">http1.0
+                            <input type="radio" name = "http" value = "1">http1.1
+                            </p>
+                            <p>HTTP 请求方式
+                            <input type="radio" name = "httpmethod" value = "get">GET
+                            <input type="radio" name = "httpmethod" value = "get">HEAD
+                            <input type="radio" name = "httpmethod" value = "get">OPTIONS
+                            <input type="radio" name = "httpmethod" value = "get">TRACE
+                            </p>
+                            <P>测试时间
+                            <input type = "text" name = "time" value = "30">
+                            </P>
+                            <p>代理服务器
+                            <input type = "text" name = "proxy" value = "">
+                            </p>
+                            <p>模拟客户端数目
+                            <input type = "text" name = "clients" value = "1">
+                            </p>
+                        </div>
+                        <div align="center"><button type="submit">开始测试</button></div>
+                </form>
+        </div>
+    </body>
+</html>
+

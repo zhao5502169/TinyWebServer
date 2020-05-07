@@ -465,7 +465,7 @@ http_conn::HTTP_CODE http_conn::do_request()
             else if (*(p + 1) == '2')
             {
                 if (m_users.find(name) != m_users.end() && m_users[name] == password)
-                    strcpy(m_url, "/welcome.html");
+                    strcpy(m_url, "/MyBench.html");
                 else
                     strcpy(m_url, "/logError.html");
             }
@@ -552,9 +552,9 @@ http_conn::HTTP_CODE http_conn::do_request()
 
                     LOG_INFO("%s", "登录检测");
                     Log::get_instance()->flush();
-                    //当用户名和密码正确，则显示welcome界面，否则显示错误界面
+                    //当用户名和密码正确，则显示MyBench界面，否则显示错误界面
                     if (result == '1')
-                        strcpy(m_url, "/welcome.html");
+                        strcpy(m_url, "/MyBench.html");
                     else
                         strcpy(m_url, "/logError.html");
 
@@ -609,9 +609,9 @@ http_conn::HTTP_CODE http_conn::do_request()
                     //printf("登录检测\n");
                     LOG_INFO("%s", "登录检测");
                     Log::get_instance()->flush();
-                    //当用户名和密码正确，则显示welcome界面，否则显示错误界面
+                    //当用户名和密码正确，则显示MyBench界面，否则显示错误界面
                     if (result == '1')
-                        strcpy(m_url, "/welcome.html");
+                        strcpy(m_url, "/MyBench.html");
                     else
                         strcpy(m_url, "/logError.html");
                 }
